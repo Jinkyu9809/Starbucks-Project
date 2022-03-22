@@ -72,3 +72,18 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next'
   }
 });
+
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+let isHidepromotion = false;
+promotionToggleBtn.addEventListener('click', function () {
+  isHidepromotion = !isHidepromotion
+  if (isHidepromotion) {
+    // 숨김 처리!
+    promotionEl.classList.add('hide');
+  }else {
+    // 보임 처리!
+    promotionEl.classList.remove('hide');
+  }
+});
