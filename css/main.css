@@ -495,5 +495,6 @@ header .badges .badge {
   width: 110px;
 }
 .rewards .btn-group .btn.gift {
-
+  margin-top: 10px;
+  flex-grow: 1;
 }
